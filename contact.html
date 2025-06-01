@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Contact | Flavor Haven</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">🍽Flavor Haven</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="chefs.html">Chefs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+		<li><a href="testimonials.html" class="active">Testimonials</a></li>
+        <li><a href="blog.html" class="active">Visit</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="content">
+      <h2>🍽Contact Us</h2>
+      <p>We'd love to hear from you. Get in touch!</p>
+	  <h2>📬 Contact Us</h2>
+      <p>We’d love to hear from you! Whether you have a question, feedback, or simply want to say hello, you can get in touch with us through the form below. Our team will respond to you as soon as possible.</p>
+
+      <form action="submit_form.php" method="POST" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Full Name" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email" />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h2>Visit Us</h2>
+        <h3>123 Flavor Haven St, Trincity,</h3>
+
+        <h2>Call Us</h2>
+        <h3>1(868) 456-7890</h3>
+
+        <h2>Business Hours</h2>
+        <h3>Monday - Friday: 11:00 AM - 9:00 PM</h3>
+        <h3>Saturday - Sunday: 10:00 AM - 10:00 PM</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flavor Haven. All rights reserved.</p>
+  </footer>
+</body>
+</html>

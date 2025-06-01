@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Reservations & Login | Flavor Haven</title>
+  <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">🍽Flavor Haven</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="chefs.html">Chefs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+		<li><a href="testimonials.html" class="active">Testimonials</a></li>
+        <li><a href="blog.html" class="active">Visit</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h2>🍽Welcome! Please Register or Login</h2>
+      <div class="auth-container">
+        <div class="auth-forms">
+          <!-- Login Form -->
+          <form action="#" method="post" class="auth-form">
+            <h3>Member Login</h3>
+            <label for="email-login">Email Address</label>
+            <input type="email" id="email-login" name="email" required />
+
+            <label for="password-login">Password</label>
+            <input type="password" id="password-login" name="password" required />
+
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#register">Register here</a></p>
+          </form>
+
+          <!-- Registration Form -->
+          <form action="#" method="POST">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="comments">Comments (optional):</label>
+            <textarea id="comments" name="comments" placeholder="Enter any comments here"></textarea>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+        <div class="booking-form-container">
+          <h3>Book a Table</h3>
+          <form action="#" method="post" class="auth-form booking-form">
+            <label for="res-name">Name</label>
+            <input type="text" id="res-name" name="res_name" required />
+
+            <label for="res-email">Email</label>
+            <input type="email" id="res-email" name="res_email" required />
+
+            <label for="res-date">Date</label>
+            <input type="date" id="res-date" name="res_date" required />
+
+            <label for="res-time">Time</label>
+            <input type="time" id="res-time" name="res_time" required />
+
+            <label for="res-guests">Guests</label>
+            <input type="number" id="res-guests" name="res_guests" min="1" max="20" required />
+
+            <button type="submit">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flavor Haven. All rights reserved.</p>
+  </footer>
+</body>
+</html>
